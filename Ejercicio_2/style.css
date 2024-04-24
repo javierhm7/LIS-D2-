@@ -1,0 +1,93 @@
+html {
+    font-size: 62.5%; /* 10px = 1rem assuming browser default font size of 16px */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; /* 16px */
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Light grey background for slight contrast */
+    color: #333; /* Dark grey text for better readability */
+}
+
+h1, h2, h3 {
+    margin: 0 0 2rem 0;
+    text-align: center; /* Center-align all headings */
+}
+
+h1 {
+    font-size: 4rem; /* 40px */
+}
+
+h2 {
+    font-size: 3.6rem; /* 36px */
+}
+
+h3 {
+    font-size: 3rem; /* 30px */
+}
+
+p {
+    font-size: 2rem; /* 20px */
+    color: black;
+    line-height: 1.5;
+}
+
+.contenedor, .container {
+    width: 95%;
+    max-width: 120rem; /* 1200px */
+    margin: 0 auto;
+    padding: 5rem 2rem; /* Responsive padding */
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+a {
+    text-decoration: none;
+    color: #0056b3; /* Bootstrap default link color */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header.h1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* More padding for the header */
+    background: #007bff; /* Bootstrap primary color for the header background */
+    color: white; /* White text for contrast */
+}
+
+form {
+    display: grid;
+    grid-gap: 1rem; /* Space between form elements */
+    padding: 2rem; /* Padding inside form */
+}
+
+input[type="text"], input[type="number"], input[type="date"], button {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+}
+
+button {
+    background: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+    background: #0056b3; /* Darken button on hover */
+}
